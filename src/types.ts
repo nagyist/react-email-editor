@@ -1,24 +1,23 @@
-/// <reference path="../node_modules/unlayer-types/embed.d.ts" />
-
 import { CSSProperties } from 'react';
 
-import Embed from 'embed/index';
-import { Editor as EditorClass } from 'embed/Editor';
-import { AppearanceConfig, DisplayMode, ToolsConfig } from 'state/types/types';
-
-export type Unlayer = typeof Embed;
-export type UnlayerOptions = Parameters<Unlayer['createEditor']>[0];
-export type Editor = InstanceType<typeof EditorClass>;
+import type {
+  AppearanceConfig,
+  DisplayMode,
+  ToolsConfig,
+  UnlayerEditor,
+  UnlayerEmbed,
+  UnlayerOptions,
+} from '@unlayer/types';
 
 export interface EditorRef {
-  editor: Editor | null;
+  editor: UnlayerEditor | null;
 }
 
 export interface EmailEditorProps {
   editorId?: string | undefined;
   minHeight?: number | string | undefined;
-  onLoad?(unlayer: Editor): void;
-  onReady?(unlayer: Editor): void;
+  onLoad?(unlayer: UnlayerEditor): void;
+  onReady?(unlayer: UnlayerEditor): void;
   options?: UnlayerOptions | undefined;
   scriptUrl?: string | undefined;
   style?: CSSProperties | undefined;
@@ -37,7 +36,7 @@ export interface EmailEditorProps {
 }
 
 declare global {
-  const unlayer: Unlayer;
+  const unlayer: UnlayerEmbed;
 
   interface Window {
     __unlayer_lastEditorId: number;

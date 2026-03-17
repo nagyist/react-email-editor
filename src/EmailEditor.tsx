@@ -4,9 +4,10 @@ import React, {
   useImperativeHandle,
   useMemo,
 } from 'react';
+import type { UnlayerEditor } from '@unlayer/types';
 
 import pkg from '../package.json';
-import { Editor, EditorRef, EmailEditorProps } from './types';
+import { EditorRef, EmailEditorProps } from './types';
 import { loadScript } from './loadScript';
 
 const win = typeof window === 'undefined' ? { __unlayer_lastEditorId: 0 } : window
@@ -16,7 +17,7 @@ export const EmailEditor = React.forwardRef<EditorRef, EmailEditorProps>(
   (props, ref) => {
     const { onLoad, onReady, scriptUrl, minHeight = 500, style = {} } = props;
 
-    const [editor, setEditor] = useState<Editor | null>(null);
+    const [editor, setEditor] = useState<UnlayerEditor | null>(null);
 
     const [hasLoadedEmbedScript, setHasLoadedEmbedScript] = useState(false);
 
