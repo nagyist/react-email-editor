@@ -22,7 +22,7 @@ Use it when you need email template creation inside your app without building an
 |                                                          Video Overview                                                           |
 | :-------------------------------------------------------------------------------------------------------------------------------: |
 | [![React Email Editor](http://unlayer.com/images/editor-video-thumb.png)](https://www.youtube.com/watch?v=qp9t74G4VyM) |
-|                                       _Watch video overview: https://youtu.be/MIWhX-NF3j8_                                        |
+|                                       _Watch video overview: https://youtu.be/qp9t74G4VyM_                                        |
 
 ## Live Demo
 
