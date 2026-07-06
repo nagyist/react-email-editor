@@ -1,5 +1,3 @@
-import 'react-app-polyfill/ie11';
-import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createGlobalStyle } from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
