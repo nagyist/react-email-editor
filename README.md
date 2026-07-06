@@ -38,6 +38,17 @@ The easiest way to use React Email Editor is to install it from NPM and include 
 npm install react-email-editor --save
 ```
 
+### Upgrading from 1.x
+
+Version 2.0 is a modernization release — the component API is unchanged, and most apps can upgrade without code changes. Requirements and packaging did change:
+
+- **React >= 16.8** and **Node >= 18** are now required. (React 15–16.7 never worked with the hooks-based component in 1.7.x; 2.0 just enforces this at install time.)
+- **Import only from the package root.** Deep imports like `react-email-editor/dist/...` are blocked by the new `exports` map.
+- **The published code is ES2019.** If you support legacy browsers through an old toolchain that can't parse ES2019, stay on 1.x or transpile `node_modules`.
+- **Editors are now destroyed on unmount** (a long-standing leak fix).
+
+See the [CHANGELOG](CHANGELOG.md) for the full list.
+
 ## Usage
 
 Require the EmailEditor component and render it with JSX:
