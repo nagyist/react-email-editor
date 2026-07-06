@@ -9,16 +9,22 @@ import type {
   UnlayerOptions,
 } from '@unlayer/types';
 
-export interface EditorRef<TDisplayMode extends DisplayMode | undefined = 'email'> {
+export interface EditorRef<
+  TDisplayMode extends DisplayMode | undefined = 'email',
+> {
   editor: UnlayerEditor<TDisplayMode> | null;
 }
 
-export interface EmailEditorProps<TDisplayMode extends DisplayMode | undefined = 'email'> {
+export interface EmailEditorProps<
+  TDisplayMode extends DisplayMode | undefined = 'email',
+> {
   editorId?: string | undefined;
   minHeight?: number | string | undefined;
   onLoad?(unlayer: UnlayerEditor<TDisplayMode>): void;
   onReady?(unlayer: UnlayerEditor<TDisplayMode>): void;
-  options?: Omit<UnlayerOptions, 'displayMode'> & { displayMode?: TDisplayMode };
+  options?: Omit<UnlayerOptions, 'displayMode'> & {
+    displayMode?: TDisplayMode;
+  };
   scriptUrl?: string | undefined;
   style?: CSSProperties | undefined;
 

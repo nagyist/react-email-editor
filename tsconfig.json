@@ -1,24 +1,25 @@
 {
-  "include": ["src"],
+  "include": ["src", "test", "tsup.config.ts", "vitest.config.ts"],
   "compilerOptions": {
+    "target": "es2019",
+    "ignoreDeprecations": "6.0",
     "module": "esnext",
+    "moduleResolution": "bundler",
     "lib": ["dom", "esnext"],
-    "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
-    "baseUrl": "src",
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "moduleResolution": "node",
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "resolveJsonModule": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "types": ["vitest/globals"]
   }
 }
