@@ -21,10 +21,10 @@ Add a production-ready, drag-and-drop email builder to your React app with a sin
 
 Use it when you need email template creation inside your app without building and maintaining a full visual editor from scratch.
 
-|                                                     Video Overview                                                     |
-| :--------------------------------------------------------------------------------------------------------------------: |
-| [![React Email Editor](http://unlayer.com/images/editor-video-thumb.png)](https://www.youtube.com/watch?v=qp9t74G4VyM) |
-|                                  _Watch video overview: https://youtu.be/qp9t74G4VyM_                                  |
+|                                                     Video Overview                                                      |
+| :---------------------------------------------------------------------------------------------------------------------: |
+| [![React Email Editor](https://unlayer.com/images/editor-video-thumb.png)](https://www.youtube.com/watch?v=qp9t74G4VyM) |
+|                                  _Watch video overview: https://youtu.be/qp9t74G4VyM_                                   |
 
 ## Live Demo
 
@@ -106,7 +106,7 @@ All unlayer methods are available in the editor instance (`emailEditorRef.curren
 - `onLoad` {`Function`} called when the editor instance is created
 - `onReady` {`Function`} called when the editor has finished loading
 - `options` {`Object`} options passed to the Unlayer editor instance (default {})
-  - See the [Unlayer Docs](https://docs.unlayer.com/docs/getting-started#configuration-options) for all available options.
+  - See the [Unlayer Docs](https://docs.unlayer.com/builder/installation) for all available options.
 - `style` {`Object`} style object for the editor container (default {})
 
 ## Support
@@ -125,9 +125,9 @@ Unlayer’s [AI Assistant](https://unlayer.com/ai) helps users generate, rewrite
 
 ## Custom Tools
 
-Custom tools can help you add your own content blocks to the editor. Every application is different and needs different tools to reach it's full potential. [Learn More](https://docs.unlayer.com/docs/custom-tools)
+Custom tools can help you add your own content blocks to the editor. Every application is different and needs different tools to reach it's full potential. [Learn More](https://docs.unlayer.com/builder/tools/custom)
 
-[![Custom Tools](https://unroll-assets.s3.amazonaws.com/custom_tools.png)](https://docs.unlayer.com/docs/custom-tools)
+[![Custom Tools](https://unroll-assets.s3.amazonaws.com/custom_tools.png)](https://docs.unlayer.com/builder/tools/custom)
 
 ## Localization
 

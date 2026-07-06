@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         This repo covers the **React wrapper component** only (mounting, props, refs, events, TypeScript types).
-        Bugs inside the editor itself (drag-and-drop, tools, HTML export, rendering) should go to [Unlayer support](https://unlayer.com/help).
+        Bugs inside the editor itself (drag-and-drop, tools, HTML export, rendering) should go to [Unlayer support](https://unlayer.com/contact).
   - type: textarea
     id: description
     attributes:

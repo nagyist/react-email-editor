@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Unlayer editor questions & support
-    url: https://unlayer.com/help
+    url: https://unlayer.com/contact
     about: Questions about the editor itself (tools, exports, rendering, paid features) are handled by Unlayer support — not this wrapper library.
   - name: Unlayer documentation
     url: https://docs.unlayer.com
