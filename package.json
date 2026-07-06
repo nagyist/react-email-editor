@@ -30,6 +30,7 @@
     "start": "tsup --watch",
     "build": "tsup",
     "test": "vitest run",
+    "test:legacy": "vitest run --config vitest.legacy.config.ts",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit",

@@ -43,3 +43,22 @@ jobs:
       - run: npm ci
       - run: npm install --no-save react@${{ matrix.react }} react-dom@${{ matrix.react }}
       - run: npm test
+
+  test-legacy:
+    name: Smoke test (React ${{ matrix.react }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        react: [16, 17]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # --legacy-peer-deps: @testing-library/react requires React 18+, but it
+      # is unused by the legacy suite.
+      - run: npm install --no-save --legacy-peer-deps react@${{ matrix.react }} react-dom@${{ matrix.react }}
+      - run: npm run test:legacy

@@ -4,7 +4,9 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
-    include: ['test/**/*.test.{ts,tsx}'],
+    // test/legacy is excluded here: it runs against React 16/17 via
+    // `npm run test:legacy` (vitest.legacy.config.ts).
+    include: ['test/*.test.{ts,tsx}'],
     coverage: {
       provider: 'v8',
       include: ['src/**'],
